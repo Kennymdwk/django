@@ -1,0 +1,15 @@
+#content-related{
+
+}
+td, th {
+    padding: 10px;
+}
+/*#content-related {*/
+    /*float: right;*/
+    /*width: 450px;*/
+    /*position: relative;*/
+    /*margin-right: -470px;*/
+/*}*/
+.dashboard #content{
+    width: auto !important;
+}

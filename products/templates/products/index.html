@@ -1,0 +1,16 @@
+{% extends 'products/base.html' %}
+{% block body %}
+
+
+<br>
+{% if all_products %}
+    <h3 class="col-md-3">Добавленные продукты</h3>
+    <ul class="container">
+        {% for product in all_products %}
+             <li class="col-md-12"><a href="{% url 'products:detail' product.id %}">{{ product.name }}</a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <h3 style="margin-left: 25px">dunno how to do it</h3>
+{% endif %}
+{% endblock %}
