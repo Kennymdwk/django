@@ -12,3 +12,4 @@ class Oilio(models.Model):
     # weight = models.ForeignKey(Product.weight, on_delete=models.CASCADE, verbose_name='вес')
 class Proil(models.Model):
     name = models.ForeignKey('products.Product', on_delete=models.CASCADE,)
+    code = models.ForeignKey('products.Code', on_delete=models.CASCADE,)

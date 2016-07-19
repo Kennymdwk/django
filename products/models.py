@@ -28,7 +28,5 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name + ' - ' + str(self.weight)
-    def pr_name(self):
-        return self.name
 
 
