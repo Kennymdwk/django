@@ -1,11 +1,14 @@
 from django.db import models
-from products.models import Code
+from products.models import Product
 # Create your models here.
 
 class Oilio(models.Model):
-    income_date = models.DateTimeField('товар получен')
-    name = models.ForeignKey(Supplier, on_delete=models.CASCADE, verbose_name='наименование продукта')
-    supplier = models.ForeignKey(Supplier, on_delete=models.CASCADE, verbose_name='от кого')
-    consumer = models.ForeignKey(Consumer, on_delete=models.CASCADE, verbose_name='кому')
-    id_1C = models.ForeignKey(Code, on_delete=models.CASCADE, verbose_name='идентификатор партии')
-    weight = models.FloatField(verbose_name='вес')
+    name_oil = models.CharField(max_length=250)
+    in_date = models.DateTimeField('товар получен')
+
+    added_time = models.TimeField(auto_now=True)
+    comments = models.TextField()
+    # id_1C_oil = models.ForeignKey(Product.id_1C)
+    # weight = models.ForeignKey(Product.weight, on_delete=models.CASCADE, verbose_name='вес')
+class Proil(models.Model):
+    name = models.ForeignKey('products.Product', on_delete=models.CASCADE,)

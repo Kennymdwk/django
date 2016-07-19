@@ -1,3 +1,7 @@
 from django.shortcuts import render
 
-# Create your views here.
+from .models import Oilio
+
+def index(request):
+    oild = Oilio.objects.all()
+    return render(request, 'oil/index.html', {'oild' : oild})
