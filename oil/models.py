@@ -10,6 +10,6 @@ class Oilio(models.Model):
     comments = models.TextField()
     # id_1C_oil = models.ForeignKey(Product.id_1C)
     # weight = models.ForeignKey(Product.weight, on_delete=models.CASCADE, verbose_name='вес')
-class Proil(models.Model):
-    name = models.ForeignKey('products.Product', on_delete=models.CASCADE,)
-    code = models.ForeignKey('products.Code', on_delete=models.CASCADE,)
+# class Proil(models.Model):
+    # name = models.ForeignKey('products.Product', on_delete=models.CASCADE,)
+    # code = models.ForeignKey('products.Code', on_delete=models.CASCADE,)

@@ -41,7 +41,7 @@
 
    <ul class="nav navbar-nav inline-navbar pull-xs-right">
       <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i> {{ album.artist }}</a>
+          <a class="nav-link" href="{% url 'music:album-add' %}"><i class="fa fa-user" aria-hidden="true"></i> {{ album.artist }}</a>
       </li>
       <li class="nav-item">
           <a class="nav-link" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Выйти</a>

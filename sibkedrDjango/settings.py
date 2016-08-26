@@ -40,9 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'music.apps.MusicConfig',
-    'products.apps.ProductsConfig',
-    'oil.apps.OilConfig',
+    'music',
+    'products',
+    'oil',
 ]
 
 MIDDLEWARE = [
@@ -137,3 +137,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/dev/howto/static-files/
 
 STATIC_URL = '/static/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
