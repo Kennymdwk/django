@@ -5,7 +5,7 @@ from products.models import Product
 class Oilio(models.Model):
     name_oil = models.CharField(max_length=250)
     in_date = models.DateTimeField('товар получен')
-
+#
     added_time = models.TimeField(auto_now=True)
     comments = models.TextField()
     # id_1C_oil = models.ForeignKey(Product.id_1C)

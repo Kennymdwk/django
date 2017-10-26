@@ -6,7 +6,7 @@ from django.core.urlresolvers import reverse_lazy
 from django.views.generic import View
 from .models import Album
 from .forms import UserForm
-
+#
 class IndexView(generic.ListView):
     template_name = 'music/index.html'
     context_object_name = 'all_albums'

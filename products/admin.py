@@ -20,3 +20,4 @@ admin.site.register(Code)
 admin.site.register(Supplier)
 admin.site.register(Consumer)
 admin.site.register(Product, ProductsAdmin)
+#
