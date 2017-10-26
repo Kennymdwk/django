@@ -1,8 +1,9 @@
 from django.contrib import admin
 from dal import autocomplete, forms
 from .models import Code, Product, Supplier, Consumer, ProductName
-#AqXRT0f6PtHd
-#?tbH<QzkD5c_GOKBS034
+#AqXRT0f6PtHd m
+#?tbH<QzkD5c_GOKBS034 p
+#QjPuVzRpY bu
 class ProductsAdmin(admin.ModelAdmin):
     form = autocomplete
     # prepopulated_fields = {'product':('name', '')}
